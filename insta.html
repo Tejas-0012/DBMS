@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Analytics</title>
+    <link rel="stylesheet" href="insta.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a onclick="showSection('home')">Home</a></li>
+                <li><a onclick="showSection('search')">Search</a></li>
+                 <li><a onclick="showSection('trending')">Trendz</a></li>
+                <li><a onclick="showSection('posts_tag')">Posts</a></li>
+                <li><a onclick="showSection('dm')">DM</a></li>
+                <li><a onclick="showSection('notifications')">Notifications</a></li>
+                <li><a onclick="showSection('profile')">Profile</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="section" >
+        <h2 class="welcome">✨ Welcome to Instagram Insights! ✨</h2>
+        <p>Track your engagement and explore analytics trends.</p>
+    </section>
+
+    <section id="search" class="section">
+        <div>
+            <input type="text" id="searchBox" placeholder="Search usernames....." />
+        </div>
+        
+         <div id="filterblock">
+            <ul id="postList">
+                <select id="userFilter">
+                    <option value="all">Filter...</option>
+                    <option value="promoter">Promoter</option>
+                    <option value="influencer">Influencer</option>
+                    <option value="marketer">Marketer</option>
+                </select>
+        </div>
+        <div id="searchsection">
+                <li class="post" data-category="Tech">New AI breakthrough!</li>
+                <li class="post" data-category="Gaming">Latest gaming console released.</li>
+                <li class="post" data-category="Movies">Upcoming blockbuster movies.</li>
+            </ul>
+        </div>
+    </section>
+    
+
+    <section id="trending" class="section">
+        
+    <h2>🔥 Trending Posts & Hashtags</h2>
+    <div class="trend-category">
+        <h3>🌍 Country Trends</h3>
+        <p>#IndianPolitics, #TokyoOlympics, #USStockMarket</p>
+    </div>
+    <div class="trend-category">
+        <h3>🏆 Sports Trends</h3>
+        <p>#IPL2025, #ChampionsLeague, #NBAFinals</p>
+    </div>
+    <div class="trend-category">
+        <h3>🎶 Entertainment</h3>
+        <p>#GrammyAwards, #BollywoodBlockbuster, #NetflixTop10</p>
+    </div>
+</section>
+
+    <section id="profile" class="section">
+        <h2>Profile Overview</h2>
+        <p><strong>Followers:</strong> <span id="followersCount">1200</span></p>
+        <p><strong>Following:</strong> <span id="followingCount">500</span></p>
+        <p><strong>Posts:</strong> <span id="postsCount">130</span></p>
+        <p><strong>Likes Received:</strong> <span id="likesCount">25K</span></p>
+    </section>
+
+    <section id="posts_tag" class="section">
+        <div>
+            <input type="text" id="searchBox" placeholder="Search posts....." />
+        </div>
+    <div id="posts_section">
+        <!-- <h2>Most Liked Posts</h2> -->
+        <p>Post #1 - 3,500 Likes</p>
+        <p>Post #2 - 2,900 Likes</p>
+    </div>
+    </section>
+
+    <section id="dm" class="section">
+        <h2>Direct Messages</h2>
+        <p>Chat with friends in real-time.</p>
+    </section>
+
+    <section id="notifications" class="section">
+        <h2>Recent Notifications</h2>
+        <p>New followers, likes, comments updated here.</p>
+    </section>
+
+    <script src="insta.js"></script>
+    
+</body>
+</html>
